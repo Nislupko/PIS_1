@@ -1,0 +1,18 @@
+{
+    "rates": {
+        "User 1": {
+            " Movie 1": 3.199,
+            " Movie 5": 3.172,
+            " Movie 6": 2.36,
+            " Movie 7": 3.949,
+            " Movie 10": 2.668,
+            " Movie 17": 1.352,
+            " Movie 23": 2.666,
+            " Movie 24": 3.082,
+            " Movie 27": 2.403
+        }
+    },
+    "recomendations": {
+        "User 1": " Movie 7"
+    }
+}
