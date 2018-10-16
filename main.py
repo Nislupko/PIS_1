@@ -53,21 +53,16 @@ def sim(target_id: int):
     return result
 
 """Функция использует knn пользователей с наибольшими занчениями метрик для пользователя target_id для прогнозирования оценки фильма"""
-def rate_films(knn: int, target_id: int):
+def rate_films(_knn: int, target_id: int):
     json_file['rates'][rates[target_id][0]]={}
-    iterator = 0
     for movie in range(1, len(rates[0])):
         if rates[target_id][movie] == ' -1':
             up_accum = 0
             down_accum = 0
             for friend, value in friends:
-                if iterator >= knn:
-                    iterator = 0
-                    break
                 if rates[friend][movie] != ' -1':
                     up_accum += value*(int(rates[friend][movie])-avg_rate[friend])
                     down_accum += value
-                    iterator += 1
             rates[target_id][movie] = round(avg_rate[target_id]+up_accum/down_accum, 3)
             json_file['rates'][rates[target_id][0]][rates[0][movie]]=rates[target_id][movie]
 
@@ -97,6 +92,7 @@ def get_recomendation(target_id: int, good_days, good_places):
     else:
         json_file['recomendations'][rates[target_id][0]] = "Nothing to watch"
 
+kNN = 7
 if __name__ == '__main__':
     """Создаем необходимую структуру json-файла, получаем данные о пользователях из файлов и считаем средние оценки пользователей"""
     json_file = dict()
@@ -110,17 +106,17 @@ if __name__ == '__main__':
     """Если программа запускается без аргументов - расчеты ведутся для всех пользователей. Если есть аргумент - для указанного пользователя"""
     if len(argv) == 1:
         for i in range(1, len(rates)):
-            friends = sim(i)
-            rate_films(7, i)
+            friends = sim(i)[0:kNN]
+            rate_films(kNN, i)
             get_recomendation(i, (' Sun', ' Sat'), (' h'))
-        with open('Users_results.json', 'w') as outfile:
+        with open('QUsers_results.json', 'w') as outfile:
             json.dump(json_file, outfile, indent=4, ensure_ascii=False)
     elif len(argv) == 2 and int(argv[1]) > 0:
         user=int(argv[1])
-        friends = sim(user)
-        rate_films(7, user)
+        friends = sim(user)[0:kNN]
+        rate_films(kNN, user)
         get_recomendation(user,(' Sun', ' Sat'), (' h'))
-        with open('User_{}_result.json'.format(argv[1]), 'w') as outfile:
+        with open('QUser_{}_result.json'.format(argv[1]), 'w') as outfile:
             json.dump(json_file, outfile, indent=4, ensure_ascii=False)
     else:
         print("Error")

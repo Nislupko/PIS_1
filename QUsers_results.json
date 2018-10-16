@@ -1,0 +1,335 @@
+{
+    "rates": {
+        "User 1": {
+            " Movie 1": 3.126,
+            " Movie 5": 2.933,
+            " Movie 6": 2.411,
+            " Movie 7": 3.949,
+            " Movie 10": 2.668,
+            " Movie 17": 1.305,
+            " Movie 23": 2.666,
+            " Movie 24": 3.289,
+            " Movie 27": 2.69
+        },
+        "User 2": {
+            " Movie 7": 3.451,
+            " Movie 12": 3.738,
+            " Movie 17": 2.5,
+            " Movie 21": 3.181,
+            " Movie 23": 1.848,
+            " Movie 27": 2.736
+        },
+        "User 3": {
+            " Movie 7": 3.586,
+            " Movie 12": 2.502,
+            " Movie 20": 3.305,
+            " Movie 22": 3.009,
+            " Movie 29": 2.0
+        },
+        "User 4": {
+            " Movie 2": 3.293,
+            " Movie 4": 3.272,
+            " Movie 5": 2.564,
+            " Movie 11": 2.487,
+            " Movie 12": 3.03,
+            " Movie 13": 3.02,
+            " Movie 14": 2.857,
+            " Movie 15": 3.57,
+            " Movie 21": 2.163
+        },
+        "User 5": {
+            " Movie 13": 3.489,
+            " Movie 24": 2.798,
+            " Movie 28": 3.166,
+            " Movie 30": 3.7
+        },
+        "User 6": {
+            " Movie 2": 4.325,
+            " Movie 9": 2.99,
+            " Movie 20": 2.593,
+            " Movie 22": 3.365,
+            " Movie 25": 2.881
+        },
+        "User 7": {
+            " Movie 10": 2.855,
+            " Movie 12": 2.868,
+            " Movie 17": 1.713,
+            " Movie 18": 3.27,
+            " Movie 26": 3.585
+        },
+        "User 8": {
+            " Movie 1": 3.057,
+            " Movie 11": 4.258,
+            " Movie 13": 4.149,
+            " Movie 18": 2.821,
+            " Movie 21": 2.636,
+            " Movie 28": 3.295
+        },
+        "User 9": {
+            " Movie 15": 2.484,
+            " Movie 16": 4.008,
+            " Movie 18": 1.977,
+            " Movie 24": 3.167
+        },
+        "User 10": {
+            " Movie 2": 2.913,
+            " Movie 4": 2.216,
+            " Movie 11": 2.345,
+            " Movie 15": 2.055,
+            " Movie 29": 3.051
+        },
+        "User 11": {
+            " Movie 1": 3.141,
+            " Movie 3": 3.149,
+            " Movie 10": 2.718,
+            " Movie 16": 3.983,
+            " Movie 17": 1.188,
+            " Movie 22": 2.855
+        },
+        "User 12": {
+            " Movie 4": 4.311,
+            " Movie 6": 3.849,
+            " Movie 11": 3.095,
+            " Movie 20": 2.963
+        },
+        "User 13": {
+            " Movie 17": 1.996,
+            " Movie 18": 2.498,
+            " Movie 24": 3.537,
+            " Movie 27": 2.427
+        },
+        "User 14": {
+            " Movie 4": 3.069,
+            " Movie 8": 2.374,
+            " Movie 9": 2.758,
+            " Movie 16": 3.315,
+            " Movie 26": 3.343
+        },
+        "User 15": {
+            " Movie 6": 3.016,
+            " Movie 11": 2.594,
+            " Movie 12": 3.431,
+            " Movie 20": 2.595,
+            " Movie 27": 3.168,
+            " Movie 28": 2.308
+        },
+        "User 16": {
+            " Movie 8": 2.421,
+            " Movie 12": 3.113,
+            " Movie 24": 3.835
+        },
+        "User 17": {
+            " Movie 3": 2.536,
+            " Movie 4": 2.4,
+            " Movie 7": 2.686,
+            " Movie 8": 2.323,
+            " Movie 11": 2.628,
+            " Movie 12": 3.928,
+            " Movie 18": 3.382,
+            " Movie 26": 3.118
+        },
+        "User 18": {
+            " Movie 11": 2.606,
+            " Movie 21": 3.175,
+            " Movie 29": 2.089
+        },
+        "User 19": {
+            " Movie 7": 4.201,
+            " Movie 8": 2.622,
+            " Movie 13": 2.759,
+            " Movie 17": 1.926,
+            " Movie 18": 3.316,
+            " Movie 25": 2.779
+        },
+        "User 20": {
+            " Movie 2": 2.345,
+            " Movie 5": 3.433,
+            " Movie 6": 2.368,
+            " Movie 8": 2.723,
+            " Movie 10": 2.979,
+            " Movie 17": 3.584,
+            " Movie 21": 2.615,
+            " Movie 25": 3.7
+        },
+        "User 21": {
+            " Movie 1": 3.263,
+            " Movie 18": 2.851,
+            " Movie 19": 2.133,
+            " Movie 21": 2.067,
+            " Movie 30": 3.168
+        },
+        "User 22": {
+            " Movie 4": 3.553,
+            " Movie 6": 2.841,
+            " Movie 17": 1.836,
+            " Movie 18": 3.141,
+            " Movie 24": 3.627,
+            " Movie 25": 2.48,
+            " Movie 30": 4.123
+        },
+        "User 23": {
+            " Movie 3": 2.599,
+            " Movie 6": 3.128,
+            " Movie 7": 3.687,
+            " Movie 9": 2.979,
+            " Movie 21": 2.311,
+            " Movie 22": 3.403,
+            " Movie 26": 4.401
+        },
+        "User 24": {
+            " Movie 4": 2.616,
+            " Movie 12": 3.433,
+            " Movie 19": 2.608
+        },
+        "User 25": {
+            " Movie 3": 3.038,
+            " Movie 6": 2.732,
+            " Movie 15": 2.502,
+            " Movie 22": 2.875,
+            " Movie 26": 2.526
+        },
+        "User 26": {
+            " Movie 3": 2.56,
+            " Movie 5": 2.711,
+            " Movie 8": 2.357,
+            " Movie 26": 3.852,
+            " Movie 30": 2.553
+        },
+        "User 27": {
+            " Movie 4": 3.518,
+            " Movie 10": 2.655,
+            " Movie 14": 2.789,
+            " Movie 17": 2.373,
+            " Movie 21": 3.342,
+            " Movie 25": 2.523
+        },
+        "User 28": {
+            " Movie 1": 3.137,
+            " Movie 2": 3.011,
+            " Movie 9": 2.416,
+            " Movie 11": 3.285
+        },
+        "User 29": {
+            " Movie 11": 3.142,
+            " Movie 17": 2.72,
+            " Movie 22": 3.568,
+            " Movie 28": 2.574,
+            " Movie 30": 3.847
+        },
+        "User 30": {
+            " Movie 13": 2.84,
+            " Movie 14": 2.394
+        },
+        "User 31": {
+            " Movie 13": 1.876,
+            " Movie 17": 2.021,
+            " Movie 30": 3.238
+        },
+        "User 32": {
+            " Movie 10": 2.35,
+            " Movie 23": 3.221,
+            " Movie 30": 3.346
+        },
+        "User 33": {
+            " Movie 14": 2.52,
+            " Movie 15": 2.544,
+            " Movie 19": 2.546,
+            " Movie 26": 3.525
+        },
+        "User 34": {
+            " Movie 1": 3.565,
+            " Movie 3": 3.212,
+            " Movie 4": 2.356,
+            " Movie 6": 1.9,
+            " Movie 19": 3.354,
+            " Movie 24": 2.788
+        },
+        "User 35": {
+            " Movie 2": 2.887,
+            " Movie 11": 2.74,
+            " Movie 15": 3.327,
+            " Movie 17": 2.203,
+            " Movie 19": 3.03,
+            " Movie 20": 3.531,
+            " Movie 28": 1.886
+        },
+        "User 36": {
+            " Movie 3": 3.568,
+            " Movie 16": 3.281,
+            " Movie 17": 2.279,
+            " Movie 18": 2.845,
+            " Movie 20": 2.993,
+            " Movie 21": 2.146
+        },
+        "User 37": {
+            " Movie 1": 3.587,
+            " Movie 3": 3.003,
+            " Movie 13": 3.434,
+            " Movie 23": 2.293,
+            " Movie 25": 2.152,
+            " Movie 30": 3.731
+        },
+        "User 38": {
+            " Movie 2": 4.093,
+            " Movie 8": 2.816,
+            " Movie 12": 3.085,
+            " Movie 24": 3.81,
+            " Movie 28": 2.375,
+            " Movie 29": 3.957
+        },
+        "User 39": {
+            " Movie 2": 2.448,
+            " Movie 4": 2.844,
+            " Movie 8": 1.0,
+            " Movie 14": 2.841,
+            " Movie 15": 3.146
+        },
+        "User 40": {
+            " Movie 1": 3.532,
+            " Movie 6": 2.271,
+            " Movie 9": 1.972
+        }
+    },
+    "recomendations": {
+        "User 1": " Movie 7",
+        "User 2": " Movie 12",
+        "User 3": " Movie 20",
+        "User 4": " Movie 15",
+        "User 5": " Movie 30",
+        "User 6": " Movie 2",
+        "User 7": " Movie 26",
+        "User 8": " Movie 11",
+        "User 9": " Movie 16",
+        "User 10": " Movie 29",
+        "User 11": " Movie 16",
+        "User 12": " Movie 6",
+        "User 13": " Movie 24",
+        "User 14": " Movie 16",
+        "User 15": " Movie 12",
+        "User 16": " Movie 12",
+        "User 17": " Movie 12",
+        "User 18": " Movie 21",
+        "User 19": " Movie 7",
+        "User 20": " Movie 25",
+        "User 21": " Movie 30",
+        "User 22": " Movie 30",
+        "User 23": " Movie 26",
+        "User 24": " Movie 12",
+        "User 25": " Movie 3",
+        "User 26": " Movie 26",
+        "User 27": " Movie 21",
+        "User 28": " Movie 11",
+        "User 29": " Movie 30",
+        "User 30": " Movie 13",
+        "User 31": " Movie 30",
+        "User 32": " Movie 23",
+        "User 33": " Movie 26",
+        "User 34": " Movie 19",
+        "User 35": " Movie 20",
+        "User 36": " Movie 16",
+        "User 37": " Movie 30",
+        "User 38": " Movie 2",
+        "User 39": " Movie 15",
+        "User 40": " Movie 1"
+    }
+}
