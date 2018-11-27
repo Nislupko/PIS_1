@@ -1,0 +1,56 @@
+{
+    "rates": {
+        "User 19": {
+            " Movie 13": 2.497,
+            " Movie 18": 2.951,
+            " Movie 25": 2.993,
+            " Movie 8": 3.354,
+            " Movie 17": 2.891,
+            " Movie 7": 4.576
+        }
+    },
+    "recomendedActors": [
+        "Karl Urban",
+        "Christopher Lee",
+        "Miranda Otto",
+        "Bernard Hill",
+        "Andrew Lesnie",
+        "Alan Howard",
+        "Viggo Mortensen",
+        "Sala Baker",
+        "Ian McKellen",
+        "Paul Norell",
+        "Thomas Robins",
+        "Bruce Phillips",
+        "John Noble",
+        "Lawrence Makoare",
+        "Billy Boyd",
+        "Stephen Ure",
+        "Ian Holm",
+        "David Wenham",
+        "Bruce Spence",
+        "Bret McKenzie",
+        "Bruce Hopkins",
+        "Harry Sinclair",
+        "Sarah McLeod",
+        "John Bach",
+        "Joel Tobeck",
+        "Ian Hughes",
+        "Shane Rangi",
+        "Elijah Wood",
+        "Sean Bean",
+        "Dominic Monaghan",
+        "Brad Dourif",
+        "Liv Tyler",
+        "Andy Serkis",
+        "Marton Csokas",
+        "Sean Astin",
+        "Peter Jackson",
+        "Hugo Weaving",
+        "John Rhys-Davies",
+        "Orlando Bloom"
+    ],
+    "recomendations": {
+        "User 19": " Movie 7"
+    }
+}

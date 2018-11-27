@@ -2,6 +2,8 @@ from collections import OrderedDict
 from operator import itemgetter
 import json
 from sys import argv
+from SPARQLWrapper import SPARQLWrapper, JSON
+sparql = SPARQLWrapper("https://query.wikidata.org/sparql")
 
 def get_data(path: str = 'data.csv'):
     """Чтение из файла и построчная запись в lines"""
@@ -91,6 +93,27 @@ def get_recomendation(target_id: int, good_days, good_places):
         json_file['recomendations'][rates[target_id][0]] = rates[0][movie]
     else:
         json_file['recomendations'][rates[target_id][0]] = "Nothing to watch"
+    return movie
+
+
+def get_actors(film):
+
+    query = """ 
+        SELECT DISTINCT ?actor  ?actorLabel  WHERE {
+            BIND("%s" @en AS ?recFilm)
+            ?film wdt:P1476 ?recFilm.
+            ?film wdt:P161 ?actor.
+            minus 
+               {
+                   ?actor wdt:P166 ?reward.
+                   filter(?reward = wd:Q103618  || ?reward=wd:Q103916 || ?reward = wd:Q106291 || ?reward=wd:Q106301)
+               }
+            SERVICE wikibase:label { bd:serviceParam wikibase:language "en" } 
+        }
+    """
+    sparql.setQuery(query % film)
+    sparql.setReturnFormat(JSON)
+    return sparql.query().convert()
 
 kNN = 7
 if __name__ == '__main__':
@@ -98,29 +121,45 @@ if __name__ == '__main__':
     json_file = dict()
     json_file['rates'] = {}
     json_file['recomendations'] = {}
+    json_file['recomendedActors'] = {}
     prev_rates = get_data(); #исходные оценки с -1, меняться не будет
     rates = get_data() #оценки и прогнозы, будет меняться
     places = get_data('context_place.csv')
     days = get_data('context_day.csv')
     avg_rate = get_avg_rate()
+    film_names = get_data('filmname.csv')
+
     """Если программа запускается без аргументов - расчеты ведутся для всех пользователей. Если есть аргумент - для указанного пользователя"""
     if len(argv) == 1:
         for i in range(1, len(rates)):
             friends = sim(i)[0:kNN]
             rate_films(kNN, i)
-            get_recomendation(i, (' Sun', ' Sat'), (' h'))
+
+            x = get_recomendation(i, (' Sun', ' Sat'), (' h'))
+            name = (film_names.get(x - 1)[1])[1:]
+            results = get_actors(name)
+            arr = []
+            for result in results["results"]["bindings"]:
+                arr.append(result["actorLabel"]["value"])
+            json_file['recomendedActors']["User {}".format(i)]=arr
         with open('QUsers_results.json', 'w') as outfile:
             json.dump(json_file, outfile, indent=4, ensure_ascii=False)
     elif len(argv) == 2 and int(argv[1]) > 0:
         user=int(argv[1])
         friends = sim(user)[0:kNN]
         rate_films(kNN, user)
-        get_recomendation(user,(' Sun', ' Sat'), (' h'))
+        x = get_recomendation(user,(' Sun', ' Sat'), (' h'))
+        name = (film_names.get(x - 1)[1])[1:]
+        results = get_actors(name)
+        arr = []
+        for result in results["results"]["bindings"]:
+            arr.append(result["actorLabel"]["value"])
+        json_file['recomendedActors']=arr
         with open('QUser_{}_result.json'.format(argv[1]), 'w') as outfile:
             json.dump(json_file, outfile, indent=4, ensure_ascii=False)
     else:
         print("Error")
-
+    print(rates[1])
 
 
 
